@@ -49,9 +49,9 @@ OUTDIR = .\tmp_debug
 LIB_APPEND = _debug
 EXE_APPEND = _debug
 !ELSE
-!MESSAGE Build using dynamic threaded release configuration
+!MESSAGE Build using static threaded release configuration
 BASE_DEFS = /DNDEBUG
-BASE_FLAGS = /guard:cf /Zc:inline /Gw /MP /GF /MD /W3 /Ox /FD /Zi /Fo"$(OUTDIR)\\" /Fd"$(OUTDIR)\\qdbm.pdb"
+BASE_FLAGS = /guard:cf /Zc:inline /Gw /MP /GF /MT /W3 /Ox /FD /Zi /Fo"$(OUTDIR)\\" /Fd"$(OUTDIR)\\qdbm.pdb"
 OUTDIR = .\tmp
 LIB_APPEND =
 EXE_APPEND =
